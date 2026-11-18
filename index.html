@@ -34,6 +34,7 @@ h1 span { display:block; margin-top:3px; font:700 22px/1.3 Georgia,"Times New Ro
 .service { font-size:12px; font-weight:700; color:var(--heading); margin:0 0 15px; }
 .email { display:flex; align-items:center; justify-content:center; gap:6px; font-family:"Segoe UI",sans-serif; font-size:12px; white-space:nowrap; }
 .email svg { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:1.6; flex-shrink:0; }
+.orcid { margin-top:4px; }
 .section-nav { display:flex; flex-wrap:wrap; justify-content:center; gap:7px 18px; margin:27px 8px 0; padding:19px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); font-size:13px; }
 .section-nav a { color:var(--muted); }
 .section-nav a:hover,.section-nav a.active { color:var(--heading); }
@@ -89,6 +90,7 @@ h4 { margin:0 0 6px; font:600 17px/1.38 Georgia,"Times New Roman","SimSun",serif
 .patent-number span { font-family:Consolas,monospace; font-size:13px; }
 .awards-list { list-style:none; padding:0; margin:0; }
 .awards-list li { display:grid; grid-template-columns:116px minmax(0,1fr); gap:17px; padding:10px 0; border-bottom:1px solid #f0f3f4; align-items:baseline; }
+.awards-list .awards-more { display:block; padding:8px 0 0; border-bottom:0; color:var(--muted); text-align:center; letter-spacing:4px; }
 .award-date { font-size:12px; color:#6c818e; line-height:1.7; font-variant-numeric:tabular-nums; }
 .award-name { font-size:13px; line-height:1.8; }
 .award-name strong { color:var(--heading); }
@@ -164,6 +166,7 @@ if ('IntersectionObserver' in window) {
       <p class="profile-details"><strong>导师：曾江源 研究员</strong><br>籍贯：安徽桐城</p>
       <p class="service">IEEE GRSS UCAS 学生分会主席</p>
       <a class="email" href="mailto:rongjiaming24@mails.ucas.ac.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 6 9 7 9-7"></path></svg>rongjiaming24@mails.ucas.ac.cn</a>
+      <a class="email orcid" href="https://orcid.org/0009-0005-4906-6769" target="_blank" rel="me noopener noreferrer">ORCID: 0009-0005-4906-6769</a>
       <nav class="section-nav" aria-label="页面导航">
         <a href="#about">个人简介</a><a href="#research">研究方向</a><a href="#publications" class="active" aria-current="location">学术论文</a><a href="#patents">授权专利</a><a href="#awards">获奖情况</a><a href="#conferences">会议经历</a>
       </nav>
@@ -319,8 +322,8 @@ if ('IntersectionObserver' in window) {
       </section>
       <section id="awards" class="content-section">
         <h2>获奖情况 <span lang="en">Honors &amp; Awards</span></h2>
-        <ol class="awards-list"><li><span class="award-date">2026.10</span><span class="award-name">International Conference on Remote Sensing and Geoinformation (RESG 2026) <strong>最佳海报展示奖</strong></span></li>
-<li><span class="award-date">2026.10</span><span class="award-name">2026 IEEE Asia-Pacific Geoscience and Remote Sensing Symposium (AP-GARSS 2026) <strong>最佳海报奖</strong></span></li>
+        <ol class="awards-list"><li><span class="award-date">2026.10</span><span class="award-name">International Conference on Remote Sensing and Geoinformation (RESG 2026) <strong>Best Poster Presentation Award</strong></span></li>
+<li><span class="award-date">2026.10</span><span class="award-name">2026 IEEE Asia-Pacific Geoscience and Remote Sensing Symposium (AP-GARSS 2026) <strong>Best Poster Award</strong></span></li>
 <li><span class="award-date">2026.08</span><span class="award-name">第二届全国遥感地理大会 <strong>最佳青年论坛报告奖</strong></span></li>
 <li><span class="award-date">2026.04</span><span class="award-name">中国科学院空天信息创新研究院 <strong>优秀研究生奖学金</strong></span></li>
 <li><span class="award-date">2025.12</span><span class="award-name"><strong>研究生国家奖学金</strong></span></li>
@@ -329,9 +332,7 @@ if ('IntersectionObserver' in window) {
 <li><span class="award-date">2025.05</span><span class="award-name">中国科学院大学 三好学生</span></li>
 <li><span class="award-date">2024.10</span><span class="award-name">江苏省高校测绘地理信息本科生优秀毕业论文 <strong>一等奖</strong></span></li>
 <li><span class="award-date">2024.06</span><span class="award-name">中国矿业大学 <strong>优秀毕业生</strong></span></li>
-<li><span class="award-date">2023.12</span><span class="award-name"><strong>国家励志奖学金</strong></span></li>
-<li><span class="award-date">2023.08</span><span class="award-name">全国大学生测绘学科创新创业智能大赛 <strong>一等奖</strong></span></li>
-<li><span class="award-date">2021–2022、2020–2021 学年</span><span class="award-name">中国矿业大学 <strong>一等奖</strong>学金</span></li></ol>
+<li class="awards-more" aria-label="更多早期获奖">…</li></ol>
       </section>
       <section id="conferences" class="content-section">
         <h2>会议经历 <span lang="en">Conference Experience</span></h2>
